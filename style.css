@@ -8,3 +8,18 @@ body{
     height: 4000px;
     background: linear-gradient(darkblue, black, darkblue);
 }
+.navbar{
+    background-color: grey;
+}
+.list{
+    margin-bottom: 0;
+}
+#heading{
+    margin: 0;
+}
+li{
+    list-style: none; display: inline ;
+}
+.navdiv{
+    display: flex; align-items: center; justify-content: space-between;
+}
