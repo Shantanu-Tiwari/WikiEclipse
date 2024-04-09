@@ -4,39 +4,57 @@
     <meta charset="UTF-8">
     <title>WikiEclipse</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        /* Add your CSS styles here */
+        .right-div {
+            float: right;
+            width: 50%; /* Adjust width as needed */
+            text-align: center; /* Center the image horizontally */
+            margin-top: 20px; /* Add some top margin */
+        }
+
+        .right-div img {
+            max-width: 100%; /* Ensure the image doesn't exceed the div's width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
-<div class="header">
-    <h2>Wiki Eclipse</h2>
+<header class="header">
+    <h1>Wiki Eclipse</h1>
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
     </div>
+</header>
+
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="#">WikiEclipse</a></div>
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button><a href="#">Sign In</a></button></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="box">
+    <h2 id="heading">WikiEclipse</h2>
 </div>
 
-<header>
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"> <a href="#">WikiEclipse</a> </div>
-            <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button><a href="#">SignIn</a></button></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<div class="box">
-    <h1 id="heading">WikiEclipse</h1>
-</div>
 <footer>
     <div class="container">
         <div id="left">
             <div class="list" draggable="true">List item 1</div>
         </div>
     </div>
-
 </footer>
+
+<!-- Add the right-div here -->
+<div class="right-div">
+    <img src="path_to_your_image.jpg" alt="Image Description">
+</div>
 </body>
 </html>
